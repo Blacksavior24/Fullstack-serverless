@@ -13,7 +13,7 @@ const Clientes = () => {
             try {
                 const api = 'COLOCA-TU-API';
                 const local = 'http://localhost:3000/dev/users/'
-                const response = await fetch(api);
+                const response = await fetch(local);
                 const data = await response.json();
                 console.log(data?.users);
                 setClientes(data?.users)
