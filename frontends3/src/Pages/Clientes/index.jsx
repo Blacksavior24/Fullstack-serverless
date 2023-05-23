@@ -11,7 +11,7 @@ const Clientes = () => {
     useEffect(()=>{
         const fetchClientes = async() =>{
             try {
-                const api = 'https://ft97ladws5.execute-api.us-east-1.amazonaws.com/dev/users';
+                const api = 'COLOCA-TU-API';
                 const local = 'http://localhost:3000/dev/users/'
                 const response = await fetch(api);
                 const data = await response.json();
